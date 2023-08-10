@@ -1,0 +1,69 @@
+html,body {
+    width: 100%;
+    height: 100%;
+    background: url("https://r4.wallpaperflare.com/wallpaper/63/784/994/serial-experiments-lain-lain-iwakura-anime-anime-girls-wallpaper-6990183df1ba5d3b1697484f107166bd.jpg") fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;   
+}
+/* Tonns of fonts!!!!!!!!! */
+@font-face {
+    font-family: "Lain-Mom"; 
+    src: url("../fonts/moms_typewriter/Mom®t___.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Sadgirl-AEROSPA"; 
+    src: url("../fonts/AEROSPA_.TTF") format("truetype");
+}
+@font-face {
+    font-family: "Cool-ADDSBP"; 
+    src: url("../fonts/addstandardbitmap/ADDSBP__.TTF") format("truetype");
+}
+@font-face {
+    font-family: "ambitsek"; 
+    src: url("../fonts/ambitsek/ambitsek.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Lain-JMH"; 
+    src: url("../fonts/jmh_typewriter/JMH\ Typewriter.otf") format("opentype");
+}
+@font-face {
+    font-family: "Lain-Love"; 
+    src: url("../fonts/love_letter_tw/Lovelt__.ttf") format("truetype");
+}
+/* End of Tonns of fonts!!!!!!!! */
+.login {
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+}
+form {
+    /* background-color: #d2b919; */
+    background-color: rgba(165, 42, 42, 0.281);
+    color:  #ffdd00;
+    /* color: rgb(165, 42, 42); */
+    font-weight: bold;
+    /* font-family: Lain-Mom; */
+    /* font-family: Lain-JMH; */
+    /* font-family: ambitsek; */
+    font-family: Cool-ADDSBP;
+    /* font-family: Sadgirl-AEROSPA; */
+    /* font-family: Lain-Love; */
+    border-radius: 10px;
+    text-align: center;
+    margin-right: 80px;
+    padding-top: 90px;
+    padding-bottom: 90px;
+} 
+@media only screen and (max-width: 810px) {
+    .login{
+        align-items: center;
+    }    
+    form{
+        margin: 0;
+        background-color: rgba(165, 42, 42, 0.616);
+    }
+}
