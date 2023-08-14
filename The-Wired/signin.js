@@ -11,7 +11,6 @@ signInButton.addEventListener("click", function () {
     let countryInput = document.getElementById("countryInput").value;
     let birthdayInput = document.getElementById("birthdayInput").value;
     if(usernameInput===""||passwordInput===""||countryInput===""||birthdayInput===""){
-        alert("Please Fill Out All The Details In The Form.");
         return;
     };
     let tempUser = { ...user };//Shalow Coppy.
