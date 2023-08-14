@@ -1,15 +1,15 @@
 // Retrieve stored data from localStorage
-var storedUserData = localStorage.getItem("UserDataBase");
+let storedUserData = localStorage.getItem("UserDataBase");
 var UserDataBase = storedUserData ? JSON.parse(storedUserData) : [];
 // Now you can work with UserDataBase containing stored user data
-var loginInButton = document.getElementById("loginInButton");
+let loginInButton = document.getElementById("loginInButton");
 
 loginInButton.addEventListener("click", function () {
-    var usernameInput = document.getElementById("usernameInput").value;
-    var passwordInput = document.getElementById("passwordInput").value;
-    var userExists = false;
-    for (var i = 0; i < UserDataBase.length; i++) {
-        var currentUser = UserDataBase[i];
+    let usernameInput = document.getElementById("usernameInput").value;
+    let passwordInput = document.getElementById("passwordInput").value;
+    let userExists = false;
+    for (let i = 0; i < UserDataBase.length; i++) {
+        let currentUser = UserDataBase[i];
         if (usernameInput === currentUser.name && passwordInput === currentUser.password) {
             userExists = true;
             break;
