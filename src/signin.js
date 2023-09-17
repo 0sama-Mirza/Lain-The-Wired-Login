@@ -3,7 +3,10 @@ var user = {
     country : "N/A",
     password : "0",
 };
-var UserDataBase = [];
+// Retrieve stored data from localStorage
+let storedUserData = localStorage.getItem("UserDataBase");
+var UserDataBase = storedUserData ? JSON.parse(storedUserData) : [];
+// Now you can work with UserDataBase containing stored user data
 let signInButton = document.getElementById("signInButton");
 signInButton.addEventListener("click", function () {
     let usernameInput = document.getElementById("usernameInput").value;
