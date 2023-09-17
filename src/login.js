@@ -21,4 +21,4 @@ loginInButton.addEventListener("click", function () {
         alert("Invalid username or password. Please try again.");
     }
 });
-console.log("Your Data Is Stored In \"UserDataBase\" which is an object of Arrays.\nIf You Want To Delete Your Already Stored Data Then Simply Type:\nlocalStorage.clear()");
+console.log("Your Data Is Stored In \"UserDataBase\" which is an array of objects.\nIf You Want To Delete Your Already Stored Data Then Simply Type:\nlocalStorage.clear()");
