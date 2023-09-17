@@ -18,6 +18,14 @@ signInButton.addEventListener("click", function () {
     };
     let tempUser = { ...user };//Shalow Coppy.
     tempUser.name = usernameInput;
+    if (storedUserData !== null){
+        for (let index = 0; index < UserDataBase.length; index++) {
+            if(usernameInput === UserDataBase[index].name){
+                alert("User Name Not Avaiable!");
+                return;
+            }
+        }
+    }
     tempUser.country = countryInput;
     tempUser.password = passwordInput;
     tempUser.birthday = birthdayInput;
